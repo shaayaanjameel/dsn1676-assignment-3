@@ -28,4 +28,17 @@ body {
     height: 100px;
     top: 100px;
     left: 100px;
+    animation: asteroid-rotate 7s ease-in-out infinite alternate; 
+}
+
+@keyframes asteroid-rotate {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+    
 }
