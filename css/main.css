@@ -42,3 +42,11 @@ body {
     }
     
 }
+
+.spaceship {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    top: 200px;
+    left: 40%;
+}
