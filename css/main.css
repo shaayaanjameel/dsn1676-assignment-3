@@ -19,7 +19,6 @@ html {
 
 body {
     background-color: black;
-    background-image: url(../images/stars.svg);
 }
 
 .asteroid {
@@ -49,7 +48,7 @@ body {
     height: 100px;
     top: 200px;
     left: 40%;
-    animation: bounce 6s ease infinite;
+    animation: bounce 5s ease infinite;
 }
 
 @keyframes bounce {
@@ -83,4 +82,26 @@ body {
         transform: translateY(0);
     }
     
+}
+
+.stars {
+    background-image: url(../images/stars.svg);
+    height: 100vh;
+    /* 
+    vh=viewport height
+    would make it the same height as the window
+    */
+    animation: scale 15s infinite alternate;  
+}
+
+@keyframes scale {
+    
+    0% {
+        transform: scale(1,1);
+    }
+    
+    100% {
+        transform: scale(1.5,1.5);
+    }
+
 }
